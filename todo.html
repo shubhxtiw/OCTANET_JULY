@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button>Sign In</button></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Todo List</h1>
+        <input type="text" id="todo-input" placeholder="Add new task">
+        <button id="add-task">+</button>
+        <ul id="todo-list">
+            <!-- todo list items will be rendered here -->
+        </ul>
+    </main>
+
+    <!-- todo list item template -->
+    <template id="todo-item-template">
+        <li>
+            <input type="checkbox" id="completed">
+            <label for="completed"></label>
+            <span></span>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </li>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
